@@ -26,9 +26,13 @@ switch(code.toUpperCase())
             System.out.println("APPROVED");
         break;
         default:
-         System.out.println("NOT VALID CODE");
+         System.out.println("INVALID");
         break;
         }
 }
+
+    void statusDetail(int code) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
  
 }
