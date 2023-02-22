@@ -15,17 +15,25 @@ import java.util.Scanner;
  * change the code to use enums which avoids String input 
  * then print the status details. 
  * @author srinivsi 
+ * @gabrielamoniz
  */
 public class Status {
-
+    
+    public enum UserStatus{
+        REJECTED,
+        PENDING, 
+        PROCESSING,
+        APPROVED,
+        INVALID,
+    }
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args)
     {
     Scanner in =new Scanner(System.in);
-    System.out.println("Enter the user status code (zero,one,two,three) in string");
-    String code = in.next();
+    System.out.println("Enter the user status code (0,1,2,3) in integer");
+    int code = in.nextInt();
     StausUser t= new StausUser();
     t.statusDetail(code); 
     }
